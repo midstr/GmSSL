@@ -696,7 +696,7 @@ static unsigned char *gmtls_new_cert_packet(X509 *x, int *l)
 
 	p = ret;
 	l2n3(n, p);
-	*l = n;
+	*l = n + 3;
 
 end:
 	return ret;
