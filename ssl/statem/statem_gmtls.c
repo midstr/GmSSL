@@ -436,7 +436,7 @@ static int gmtls_construct_ske_sm2dhe(SSL *s, unsigned char **p, int *l, int *al
 	EVP_MD_CTX *md_ctx = NULL;
 	unsigned char z[EVP_MAX_MD_SIZE];
 	size_t zlen;
-`	unsigned int siglen;
+	unsigned int siglen;
 
 	*al = SSL_AD_INTERNAL_ERROR;
 
